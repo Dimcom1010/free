@@ -1,9 +1,12 @@
 .burger_container {
   display: none;
 }
+.burger_items{
+  display: none;
+}
 
 @media (max-width: 800px) {
-  .burger_container {
+  .burger_icon {
     display: flex;
     flex-direction: column-reverse;
     align-items: flex-end;
@@ -23,6 +26,23 @@
     background-color: #fff;
     margin-bottom: 2px;
   }
-  .burger_container:hover {
+  .burger_container:hover .burger_circle{
+    background-color: rgb(146, 146, 146);
   }
+  .burger_items{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 22px;
+    align-items: center;
+    margin-top: 60px;
+    
+    background-color: rgba(179, 179, 179, 0.473);
+  }
+  .burger_item{
+    margin-bottom: 25px;
+    cursor: pointer;
+  }
+
 }
