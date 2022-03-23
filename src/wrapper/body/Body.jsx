@@ -40,9 +40,7 @@ const Body = (props) => {
                             <div className="text_top">SR DAO</div>
                             <div className="text_bottom wide">SIRIUS DAO</div>
                         </div>
-                        
                             <input type="text"   placeholder='0' value={count1} onChange={event => setCount2(event.target.value*2) }/>
-                        
                     </div>
 
                     <div className="info_container flexRevers border_radius_Left info_bgcolor">
