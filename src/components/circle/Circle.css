@@ -10,6 +10,7 @@
   border-radius: 50%;
   background: #7d6f9b;
   transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+  cursor: pointer;
 }
 .circle:hover {
   background: #ffffff;

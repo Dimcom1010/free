@@ -67,7 +67,7 @@ const Body = (props) => {
                         </div>
                         <div className="info_text">
                             <div className="text_top">USDT</div>
-                            <div className="text_bottom wide">TETHER</div>
+                            <div className="text_bottom wide">TETHER1</div>
                         </div>
                         <input type="text" placeholder="0" value={count2} onChange={event => setCount1(event.target.value/2)}/>
                         
