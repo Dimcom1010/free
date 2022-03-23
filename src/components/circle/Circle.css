@@ -1,0 +1,35 @@
+.circle {
+  display: block;
+  position: absolute;
+  width: 37px;
+  height: 37px;
+  border: 1px solid #fff;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%) rotate(0deg);
+  border-radius: 50%;
+  background: #7d6f9b;
+  transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.circle:hover {
+  background: #ffffff;
+}
+
+.arrow {
+  position: absolute;
+
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.arrow_up {
+  top: 40%;
+}
+.arrow_down {
+  top: 60%;
+  transform: translateX(-50%) translateY(-50%) rotate(180deg);
+}
+@media (max-width: 800px) {
+  .circle {
+    transform: translateX(-50%) translateY(-50%) rotate(90deg);
+  }
+}

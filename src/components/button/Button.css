@@ -1,0 +1,26 @@
+.button {
+    display: inline-block;
+    border: 1px solid #fff;
+
+    padding: 17px 54px;
+    color: #fff;
+    background: transparent;
+    border-radius: 30px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    transition: .4s cubic-bezier(0.075, 0.82, 0.165, 1);
+    cursor: pointer   ;
+}
+.button:hover{
+    background: #fff;
+    color: #270F59;
+
+}
+@media (max-width: 800px) { 
+    .button {
+        padding: 13px 29px;
+
+    }
+}

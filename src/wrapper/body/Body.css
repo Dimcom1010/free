@@ -1,0 +1,282 @@
+.body_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.block_text {
+  max-width: 850px;
+  margin: 0 auto;
+  margin-bottom: 155px;
+}
+
+.high_text_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 50px 0 0 0;
+}
+
+.high_text {
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: left;
+  line-height: 22px;
+  margin: 35px auto;
+}
+
+.arrow_percent {
+  color: #fff;
+  width: 17px;
+  transform: rotate(-90deg);
+}
+
+.text {
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: left;
+}
+
+.adaptive_container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.result_container {
+  display: block;
+  width: 100%;
+}
+
+.info_container {
+  display: flex;
+  width: 50%;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  justify-content: space-between;
+  transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.info_bgcolor {
+  background-color: rgba(255, 255, 255, 0.397);
+}
+
+.flexRevers {
+  flex-direction: row-reverse;
+}
+
+.border_radius_right {
+  border-radius: 50px 0 0 50px;
+  border-right: 0;
+}
+
+.border_radius_Left {
+  border-radius: 0 50px 50px 0;
+  border-left: 0;
+}
+
+.info_icon {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  background-color: #fff;
+  margin: 26px;
+  border-radius: 50%;
+}
+
+.info_img {
+  position: absolute;
+  width: 35px;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.info_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.text_top {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.text_bottom {
+  display: block;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.info_number {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: right;
+  margin-right: 25px;
+}
+input {
+  width: 86px;
+  text-align: center;
+  font-size: 22px;
+  margin: 0 25px 0 25px;
+  background-color: transparent;
+  outline: 0;
+  color: rgb(255, 255, 255);
+  border-color: transparent;
+}
+input::placeholder {
+  color: rgba(255, 255, 255, 0.637);
+}
+
+.smole_text {
+  position: absolute;
+  top: -30px;
+  left: 45px;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.text_left {
+  top: -30px;
+  left: 45px;
+}
+
+.text_right {
+  top: -30px;
+  left: 45px;
+}
+
+.button_container {
+  margin: 45px auto;
+  display: flex;
+  justify-content: space-between;
+  width: 430px;
+}
+
+.wide {
+  display: block;
+}
+
+.narrow {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .high_text {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: left;
+    line-height: 48px;
+    margin: 5px auto;
+  }
+
+  .high_text_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 114px 0 0 0;
+  }
+
+  .adaptive_container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info_container {
+    align-items: center;
+    width: 100%;
+  }
+
+  .info_icon {
+    margin: 5px 0 5px 5px;
+  }
+
+  .info_number {
+    margin: 0 60px 0 0px;
+    font-size: 16px;
+  }
+
+  .border_radius_right {
+    border-radius: 50px;
+    border-right: 1px solid #fff;
+  }
+
+  .border_radius_Left {
+    border-radius: 50px;
+    border-right: 1px solid #fff;
+  }
+
+  .flexRevers {
+    flex-direction: row;
+  }
+
+  .text_left {
+    top: -25px;
+    left: 50%;
+  }
+
+  .text {
+    margin: 0 15px;
+  }
+  .text_top {
+    font-size: 16px;
+  }
+  .text_right {
+    top: 60px;
+    left: 50%;
+  }
+
+  .block_text {
+    margin-bottom: 65px;
+  }
+
+  .high_text {
+    font-size: 2;
+  }
+
+  .button_container {
+    width: 300px;
+  }
+
+  .wide {
+    display: none;
+  }
+
+  .narrow {
+    display: block;
+  }
+  input {
+    width: 84px;
+    text-align: center;
+    font-size: 16px;
+    margin: 0 130px 0 0px;
+    background-color: transparent;
+    outline: 0;
+    color: rgb(255, 255, 255);
+    border-color: transparent;
+  }
+}
