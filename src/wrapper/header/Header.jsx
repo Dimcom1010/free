@@ -2,6 +2,7 @@ import React from "react";
 import './Header.css';
 import Logo from '../../components/logo/Logo';
 import Burger from '../../components/burger/Burger';
+import { Link, NavLink} from 'react-router-dom';
 
 
 const Home = (props) => {
@@ -11,15 +12,16 @@ const Home = (props) => {
             <div className="header_container">
                 <div className="header_menu_left">
                     <div className="menu_items">
-                        <div className="menu_item">ABOUT US</div>
-                        <div className="menu_item">DASHBOARD</div>
+
+                        <NavLink  to="/about_us" className="Nav_link" activeStyle={{ color: 'red' }}>ABOUT US</NavLink>
+                        <NavLink to="/dashbord" className="Nav_link">DASHBOARD</NavLink>
                     </div>
                 </div>
-                <Logo></Logo>
+                <NavLink to="/"><Logo></Logo></NavLink> 
                 <div className="header_menu_rigth">
                     <div className="menu_items">
-                        <div className="menu_item">MY ACCOUNT</div>
-                        <div className="menu_item">CONNECT WALLET</div>
+                        <NavLink to="/my_account" className="Nav_link">MY ACCOUNT</NavLink>
+                        <NavLink to="/connect_wallet" className="Nav_link">CONNECT WALLET</NavLink>
                     </div>
                 </div>
             </div>

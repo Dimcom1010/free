@@ -50,29 +50,15 @@
   flex-direction: row;
 }
 
-.result_container {
-  display: block;
-  width: 100%;
-}
-
-/* .info_container {
-  display: flex;
-  width: 50%;
-  position: relative;
-  flex-direction: row;
-  align-items: center;
-  border: 1px solid #fff;
-  border-radius: 50px;
-  justify-content: space-between;
-  transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
-} */
 .info_container {
   display: grid;
   width: 50%;
   grid-template-columns: 100px 1fr 130px;
-
-  border: 1px solid #fff;
+  border: 1px solid rgb(255, 255, 255);
   border-radius: 50px;
+}
+.info_container_rev {
+  grid-template-columns: 130px 1fr 100px;
 }
 .border_radius_right {
   border-radius: 50px 0 0 50px;
@@ -106,6 +92,7 @@
 }
 .info_text {
   display: block;
+
   margin: auto 0px;
   grid-column-start: 2;
   grid-column-end: 3;
@@ -118,17 +105,20 @@
   font-style: normal;
   font-weight: 400;
   line-height: 22px;
-  letter-spacing: 0em;
-  text-align: left;
 }
 
 .text_bottom {
-  display: block;
   font-size: 28px;
-  font-style: normal;
-  font-weight: 400;
-  letter-spacing: 0em;
-  text-align: left;
+}
+.info_text_left {
+  display: flex;
+  width: 100%;
+  justify-content: start;
+}
+.info_text .info_text_right {
+  display: flex;
+  width: 100%;
+  justify-content: end;
 }
 
 .inputGroup {
@@ -209,7 +199,7 @@ input:focus::placeholder {
 }
 
 .wide {
-  display: block;
+  display: flex;
 }
 
 .narrow {
@@ -265,6 +255,12 @@ input:focus::placeholder {
   .info_icon {
     position: relative;
     margin: 5px 0 5px 5px;
+  }
+  .info_text .info_text_right {
+    justify-content: start;
+  }
+  .info_text .text_bottom {
+    display: none;
   }
 
   .info_number {
@@ -325,7 +321,7 @@ input:focus::placeholder {
   }
 
   .narrow {
-    display: block;
+    display: flex;
   }
   .button_container {
     width: 300px;

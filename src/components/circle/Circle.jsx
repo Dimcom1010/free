@@ -1,6 +1,6 @@
 import React from "react";
 import './Circle.css';
-import arrow from './arrow.svg';
+import arrow from '../../img/circle/arrow.svg';
 
 
 const Circle = (props) => {

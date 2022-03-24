@@ -2,24 +2,14 @@ import React from 'react';
 import './Body.css';
 import Button from '../../components/button/Button'
 import Circle from '../../components/circle/Circle'
-import iconLeft from './iconLeft.svg';
-import iconRight from './iconRight.png';
-import iconArrow from './iconArrow.svg';
 
-class Body extends React.Component {
+import iconLeft from '../../img/body/iconLeft.svg';
+import iconRight from '../../img/body/iconRight.png';
+import iconArrow from '../../img/body/iconArrow.svg';
 
-    val2=0
+    const Body = (props) => {
+ 
 
-    f1(x){
-        console.log('1',x)
-        if (x){
-            this.val2=x*2
-        }
-        // console.log(this.textInput1)
-        // setCount2(textInput1.current.value)
-    }
-
-    render() {
         return (
             <>
                 <div className="body_container">
@@ -42,31 +32,32 @@ class Body extends React.Component {
                                  <img src={iconLeft} className="info_img" alt="iconLeft" />
                             </div>
                             <div className="info_text">
-                                <div className="text_top">SR DAO</div>
-                                <div className="text_bottom wide">SIRIUS DAO</div>
+                                <div className="text_top ">SR DAO</div>
+                                <div className="text_bottom wide ">SIRIUS DAO</div>
                             </div>
                             <div className="inputGroup">
                                 <div className="smole_text  smole_text_top narrow">Requested Amount</div>
-                                <input  onInput={event => this.f1(event.target.value)}  type="text" placeholder="0" />
+                                <input  type="number"  placeholder="0" />
                             </div>
 
                         </div>
 
-                        <div className="info_container  border_radius_Left info_bgcolor">
+                        <div className="info_container info_container_rev border_radius_Left info_bgcolor">
                         <div className="smole_text  smole_text_right wide">Offered Amount</div>
                                 
                             <div className="info_icon iconRevers">
-                                <img src={iconRight} value={this.val2}  className="info_img" alt="iconLeft" />
+                                <img src={iconRight} 
+                                 className="info_img" alt="iconLeft" />
                             </div>
 
                             <div className="info_text txtRevers">
-                                <div className="text_top">USDT</div>
-                                <div className="text_bottom wide">TETHER</div>
+                                <div className="text_top info_text_right">USDT</div>
+                                <div className="text_bottom  info_text_right wide">TETHER</div>
                             </div>
 
                             <div className="inputGroup igRevers">
                                 <div className="smole_text  smole_text_down narrow">Offered Amount</div>
-                                <input   type="text" placeholder="0" />
+                                <input   type="number"  placeholder="0" />
                             </div>
 
 
@@ -84,6 +75,6 @@ class Body extends React.Component {
             </>
         )
     }
-}
+
 
 export default Body

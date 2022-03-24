@@ -1,7 +1,7 @@
 import React from "react";
 
 import './Logo.css';
-import mainLogo from './logo.svg';
+import mainLogo from '../../img/logo/logo.svg';
 
 
 
