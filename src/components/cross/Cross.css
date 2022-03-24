@@ -1,0 +1,43 @@
+.menu_cross {
+  position: absolute;
+  display: inline-block;
+  background: transparent;
+  right: 20px;
+  padding: 27px;
+  top: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.menu_cross:after,
+.menu_cross:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 25px;
+  height: 3px;
+  background: #fff;
+  top: 25px;
+  right: 15px;
+}
+.menu_cross::after {
+  transform: rotate(45deg);
+  transition: 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.menu_cross::before {
+  transform: rotate(135deg);
+  transition: 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.menu_cross:hover {
+  background: #a5a5a510;
+}
+.menu_cross:hover::after {
+  transform: rotate(135deg);
+}
+.menu_cross:hover::before {
+  transform: rotate(45deg);
+}
+@media (max-width: 800px) {
+
+}

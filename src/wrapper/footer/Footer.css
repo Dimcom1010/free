@@ -36,6 +36,21 @@
 .narrow {
   display: none;
 }
+.footer_link:link {
+  transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+  font-size: 14px;
+  color: #fff;
+}
+
+.footer_link:visited {
+  color: #fff;
+}
+.footer_link:hover {
+  color: rgb(190, 190, 190);
+}
+.footer_link:active {
+  color: teal;
+}
 @media (max-width: 800px) {
   .footer_items {
     font-size: 12px;

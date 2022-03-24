@@ -7,6 +7,9 @@ import Dashbord from '../dashbord/Dashbord'
 import MyAccount from '../myAccount/MyAccount'
 import ConnectWallet from '../connectWallet/ConnectWallet'
 import Footer from '../footer/Footer'
+import PrivacyPolicy from '../privacyPolicy/PrivacyPolicy'
+import CookiePolicy from '../cookiePolicy/CookiePolicy'
+import Telegram from '../telegram/Telegram'
 import {
     Routes,
     Route
@@ -22,21 +25,14 @@ const Home = (props) => {
                 <Header/> 
 
                 <Routes>
-                    <Route path="/about_us" element={ <About/>}>
-                
-                    </Route>
-                    <Route path="/dashbord" element={<Dashbord/>}>
-                    
-                    </Route>
-                    <Route path="/my_account" element={<MyAccount/>}>
-                    
-                    </Route>
-                    <Route path="/connect_wallet" element={<ConnectWallet/>}>
-                    
-                    </Route>
-                    <Route path="/" element={<Body/>}>
-                    
-                    </Route>
+                    <Route path="/about_us" element={ <About/>}></Route>
+                    <Route path="/dashbord" element={<Dashbord/>}></Route>
+                    <Route path="/my_account" element={<MyAccount/>}></Route>
+                    <Route path="/connect_wallet" element={<ConnectWallet/>}></Route>
+                    <Route path="/" element={<Body/>}></Route>
+                    <Route path="/privacyPolicy" element={<PrivacyPolicy/>}></Route>
+                    <Route path="/cookiePolicy" element={<CookiePolicy/>}></Route>
+                    <Route path="/telegram" element={<Telegram/>}></Route>
                 </Routes>
                 
                 <Footer/>

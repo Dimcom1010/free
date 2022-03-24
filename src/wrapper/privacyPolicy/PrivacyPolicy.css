@@ -1,0 +1,25 @@
+
+.heading{
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    font-size: 36px;
+    margin-top: 20px;
+    padding-bottom: 5px;
+}
+.small{
+    font-size: 12px;
+    margin-top: 6px;
+}
+.container_text{
+    display: block;
+    max-width: 930px;
+    margin: 0 auto;
+}
+.sup_topic{
+    font-size: 22px;
+}
+@media (max-width: 800px) {
+
+}
+ 
