@@ -6,7 +6,7 @@ const show=()=>{
     console.log('show')
 }
 
-let isLoggedIn = true
+let isLoggedIn = false
 const Burger = (props) => {
 
     return (
@@ -27,9 +27,9 @@ const Burger = (props) => {
                     <div className="burger_item">CONNECT WALLET</div>
                 </div> : <div/> }
             </div>
-            <div>
+            {/* <div>
       Пользователь <b>{isLoggedIn ? 'в данный момент' : 'не'}</b> авторизован.
-    </div>
+    </div> */}
 
         </>
     )
