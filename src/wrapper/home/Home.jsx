@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState} from 'react';
 import './Home.css';
 import Header from '../header/Header'
 import Body from '../body/Body'
@@ -17,24 +17,25 @@ import {
 
 
 const Home = (props) => {
+    const [connectWallet, setconnectWallet] = useState(false);
 
     return (
         <>
             <div className="wrapper">
                 <div className="container">
-                <Header/> 
+                <Header setAttiveCW={setconnectWallet}
+                 /> 
 
                 <Routes>
                     <Route path="/about_us" element={ <About/>}></Route>
                     <Route path="/dashbord" element={<Dashbord/>}></Route>
                     <Route path="/my_account" element={<MyAccount/>}></Route>
-                    <Route path="/connect_wallet" element={<ConnectWallet/>}></Route>
                     <Route path="/" element={<Body/>}></Route>
                     <Route path="/privacyPolicy" element={<PrivacyPolicy/>}></Route>
                     <Route path="/cookiePolicy" element={<CookiePolicy/>}></Route>
                     <Route path="/telegram" element={<Telegram/>}></Route>
                 </Routes>
-                
+                <ConnectWallet active={connectWallet} setAttiveCW={setconnectWallet}/>
                 <Footer/>
                 </div>
             </div>

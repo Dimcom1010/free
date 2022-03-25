@@ -4,14 +4,10 @@ import './Cross.css';
 
 
 const Cross = (props) => {
-    console.log('props')
-    console.log(props)
+
     return (
         <>
-        
-        <div className="menu_cross" onClick={() => setCount(false)}></div>
-          
-
+            <div className="menu_cross" ></div>
         </>
     )
 }

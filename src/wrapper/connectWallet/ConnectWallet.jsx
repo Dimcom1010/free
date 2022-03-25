@@ -1,21 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './ConnectWallet.css';
 import metaMask from '../../img/connectWallet/metaMask.svg';
 import Cross from '../../components/cross/Cross';
-import Button from '../../components/button/Button'
 
-const ConnectWallet = (props) => {
-    const [connectWallet, setconnectWallet] = useState(true);
+const ConnectWallet = ({active,setAttiveCW}) => {
 
     return (
-        <>
-            
-
-
+        <>{active ?
             <div className="container_ConnectWallet">
-                {connectWallet ?
                     <div className="connectWallet">
-                        <div onClick={() => setconnectWallet(false)}><Cross /></div>
+                        <div onClick={() => setAttiveCW(false)}><Cross /></div>
                         <div className="connectWallet_text">Connect Wallet</div>
                         <div className="connectWallet_icons">
                             <div className="connectWallet_icon " >
@@ -32,8 +26,7 @@ const ConnectWallet = (props) => {
                         </div> */}
                         </div>
                     </div>
-                    : <div onClick={() => setconnectWallet(true)}> <Button  text="Connect Wallet" /></div>}
-            </div>
+            </div>: <></>}
             
         </>
     )

@@ -9,4 +9,4 @@ const Dashbord = (props) => {
     )
 }
 
-export default Dashbord
+export default Dashbord 

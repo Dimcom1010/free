@@ -12,6 +12,13 @@
 
   cursor: pointer;
 }
+.header_link {
+  font-size: 14px;
+  text-decoration: underline;
+}
+.header_link:hover {
+  color: rgb(190, 190, 190);
+}
 .Nav_link:link {
   transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
   font-size: 14px;

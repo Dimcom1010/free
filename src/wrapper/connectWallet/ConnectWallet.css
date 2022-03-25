@@ -1,41 +1,48 @@
-.container_ConnectWallet{
-    position: relative;
-}
-.connectWallet{
-    position: absolute;
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 440px;
-    height: 440px;
-    background: #270F59;
-    border-radius: 35px;
-    top: 50%;
-    left: 50%;
-    border: 1px solid #fff;
-    transform: translateX(-50%) translateY(-50%);
-}
-.connectWallet_text{
-    margin-top: 53px;
-    display: block;
+.container_ConnectWallet {
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
 
+  background-color: rgba(0, 0, 0, 0.541);
+  z-index: 1000;
+}
+.connectWallet {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 375px;
+  height: 375px;
 
+  background: #270f59;
+  border-radius: 35px;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
 }
-.connectWallet_icons{
-    margin-top: 70px;
-    display: grid;
-    grid-template-columns: 1fr ;
-    /* grid-template-columns: 1fr 1fr; */
-    gap: 50px;
+.connectWallet_text {
+  margin-top: 53px;
+  display: block;
+}
+.connectWallet_icons {
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: 1fr;
+  /* grid-template-columns: 1fr 1fr; */
+  gap: 50px;
 }
 
-.connectWallet_icon{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.connectWallet_icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.cw_icon{}
-.cw_text{}
+.cw_icon {
+}
+.cw_text {
+}
 @media (max-width: 800px) {
 }

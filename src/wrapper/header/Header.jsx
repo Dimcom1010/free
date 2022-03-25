@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react';
 import './Header.css';
 import Logo from '../../components/logo/Logo';
 import Burger from '../../components/burger/Burger';
 import { NavLink } from 'react-router-dom';
 
 
-const Home = (props) => {
+const Home = ({setAttiveCW}) => {
 
     return (
         <>
@@ -21,11 +21,12 @@ const Home = (props) => {
                 <div className="header_menu_rigth">
                     <div className="menu_items">
                         <NavLink to="/my_account" className="Nav_link">MY ACCOUNT</NavLink>
-                        <NavLink to="/connect_wallet" className="Nav_link">CONNECT WALLET</NavLink>
+                        <div onClick={() => setAttiveCW(true)} className="header_link">CONNECT WALLET</div>
                     </div>
                 </div>
             </div>
-            <Burger />
+            <Burger setAttiveCW={setAttiveCW}/>
+            
         </>
     )
 }

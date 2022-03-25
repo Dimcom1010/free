@@ -6,7 +6,7 @@
   position: absolute;
   display: none;
 }
- 
+
 @media (max-width: 800px) {
   .burger {
     display: flex;
@@ -22,18 +22,18 @@
     cursor: pointer;
     transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
   }
- 
 
   .burger_circle {
     display: block;
-    width: 4px;
-    height: 4px;
-    border-radius: 50%;
+    width: 20px;
+    height: 3px;
+
     background-color: #fff;
     margin-bottom: 2px;
+    margin-top: 2px;
     transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
   }
-  .burger:hover{
+  .burger:hover {
     background: #a5a5a510;
   }
   .burger:hover .burger_circle {
@@ -53,7 +53,7 @@
   .menu_link:link {
     transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
     font-size: 14px;
-    
+
     color: rgb(255, 255, 255);
     text-decoration: none;
   }
@@ -77,7 +77,7 @@
     cursor: pointer;
     transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
   }
-  .menu_item:nth-child(2){
+  .menu_item:nth-child(2) {
     padding: 11px 25px 25px;
   }
 
@@ -87,5 +87,4 @@
   .menu_item:last-child {
     border-radius: 0 0 30px 30px;
   }
-
 }

@@ -67,7 +67,8 @@ import iconArrow from '../../img/body/iconArrow.svg';
                     </div>
                 </div>
                 <div className="button_container">
-                    <Button text="DEPOSIT" />
+                <a href="https://client.aragon.org/#/siriusdao/0x2d3238856263782bc82ecad66b7d6af2fa7c746f/"><Button text="DEPOSIT" /></a>
+                    
                     <Button text="WITHDRAW" />
                 </div>
 
