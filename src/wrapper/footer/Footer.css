@@ -51,6 +51,9 @@
 .footer_link:active {
   color: teal;
 }
+.footer_withoutLine{
+  text-decoration: none;
+}
 @media (max-width: 800px) {
   .footer_items {
     font-size: 12px;

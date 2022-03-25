@@ -9,7 +9,7 @@ const Footer = (props) => {
         <>
             <div className="footer_container">
                 <div className="footer_items">
-                    <div className="footer_item wide">Powered by <img src={footerIcon} className="footerIcon" alt="footerIcon" /></div>
+                    <div className="footer_item wide"> <a href="https://weezi.io/" className="footer_link footer_withoutLine">Powered by <img src={footerIcon} className="footerIcon" alt="footerIcon" /></a></div>
                     <div className="footer_item group">
                     
                         <NavLink to="/privacyPolicy" className="footer_link" >Privacy&nbsp;Policy</NavLink>
